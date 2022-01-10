@@ -29,6 +29,7 @@ User.pre("save", function (next) {
 });
 
 // validate password
+// this cannot be an arrow function!!!
 User.methods.validPassword = function (password) {
   return bcrypt.compareSync(password, this.password);
 };
