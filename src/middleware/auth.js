@@ -24,6 +24,7 @@ module.exports.loginRequired = function (req, _res, next) {
 
 module.exports.findUser = async function (req, _res, next) {
   try {
+    // here `req.jwt.id` is the user's mongodb `_id`
     const user = await User.findById(req.jwt.id);
     req.user = user;
     next();
