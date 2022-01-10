@@ -13,7 +13,7 @@ if (!process.env.PORT) {
 const app = express();
 
 // add middleware
-app.use(helmet())
+app.use(helmet()) // adds "hardened" headers
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
