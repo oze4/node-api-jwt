@@ -9,8 +9,12 @@ This project uses MongoDB to store User accounts. Users can register accoounts t
 Authorization header value must start with `JWT` plus one space, and then the JWT eg: 
 
 ```
-authorization: JWT yourjwt.tokengoes.here
+// header shown as JSON
+{
+  "authorization": "JWT yourjwt.tokengoes.here"
+}
 ``` 
+
 [See here for more](https://github.com/oze4/node-api-jwt/raw/master/.github/node-jwt-poc.gif)
 
 ## Setup
