@@ -1,10 +1,12 @@
 # Node API with JWT : Proof of Concept
 
-![demo](https://github.com/oze4/node-api-jwt/blob/master/.github/node-jwt-poc.gif)
-
 ## Notes
 
 This project uses MongoDB to store User accounts. Users can register accoounts to access protected routes via JWT. We use `bcrypt` to salt and hash passwords before storing in Mongo.
+
+#### Important
+
+Authorization header value must start with `JWT` plus one space, and then the JWT : `authorization: JWT yourjwt.tokengoes.here`. [See here for more](https://github.com/oze4/node-api-jwt/raw/master/.github/node-jwt-poc.gif)
 
 ## Setup
 
@@ -16,3 +18,7 @@ This project uses MongoDB to store User accounts. Users can register accoounts t
 
 - `npm install` : installs dependencies
 - `npm start` : starts the project via `nodemon`
+
+## Demo
+
+![demo](https://github.com/oze4/node-api-jwt/blob/master/.github/node-jwt-poc.gif)
