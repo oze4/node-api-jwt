@@ -1,6 +1,6 @@
 # Node JWT API Proof of Concept
 
-https://github.com/oze4/node-api-jwt/blob/master/.github/node-jwt-poc.gif?raw=true
+![demo](https://github.com/oze4/node-api-jwt/blob/master/.github/node-jwt-poc.gif?raw=true)
 
 ## Notes
 
