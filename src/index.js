@@ -1,6 +1,6 @@
 require("dotenv").config();
 const express = require("express");
-const jsonwebtoken = require("jsonwebtoken");
+const helmet = require("helmet");
 const attachApiRouter = require("./api");
 
 // make sure we have env vars set
@@ -13,6 +13,7 @@ if (!process.env.PORT) {
 const app = express();
 
 // add middleware
+app.use(helmet())
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 

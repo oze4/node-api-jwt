@@ -24,4 +24,4 @@ content-type: application/json
 # Use JWT to access protected route
 GET http://localhost:3000/api/protected HTTP/1.1
 content-type: application/json
-authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZGI3OGViMmZkMTY4MjZhOTEyYzllNCIsImlhdCI6MTY0MTc3MzI5OSwiZXhwIjoxNjQxODMzMjk5fQ.qQmVGRhgYW8coOc89FQiHcsz5-FkLxArdlTCmF8z7o8
+authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZGI3OGViMmZkMTY4MjZhOTEyYzllNCIsImlhdCI6MTY0MTg0OTI5OSwiZXhwIjoxNjQxOTA5Mjk5fQ.slot69n2Y3II-uFbsIRZOtNtwO5grDe2-U5JHHJf63U
