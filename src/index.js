@@ -1,7 +1,6 @@
 require("dotenv").config();
 const express = require("express");
 const jsonwebtoken = require("jsonwebtoken");
-
 const attachApiRouter = require("./api");
 
 // make sure we have env vars set
