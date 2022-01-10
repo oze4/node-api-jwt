@@ -14,5 +14,5 @@ This project uses MongoDB to store User accounts. Users can register accoounts t
 
 ## Commands
 
-`npm install` : installs dependencies
-`npm start` : starts the project via `nodemon`
+- `npm install` : installs dependencies
+- `npm start` : starts the project via `nodemon`
