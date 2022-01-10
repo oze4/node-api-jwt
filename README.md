@@ -1,5 +1,7 @@
 # Node JWT API Proof of Concept
 
+https://github.com/oze4/node-api-jwt/blob/master/.github/node-jwt-poc.gif?raw=true
+
 ## Notes
 
 This project uses MongoDB to store User accounts. Users can register accoounts to access protected routes via JWT.
