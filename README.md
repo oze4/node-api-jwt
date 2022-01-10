@@ -1,6 +1,6 @@
 # Node API with JWT : Proof of Concept
 
-## Notes
+## Synopsis
 
 This project uses MongoDB to store User accounts. Users can register accoounts to access protected routes via JWT. We use `bcrypt` to salt and hash passwords before storing in Mongo.
 
