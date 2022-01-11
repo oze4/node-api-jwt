@@ -30,7 +30,6 @@ app.use('*', (_req, res, _next) => {
   res.status(404).json({ status: "error", message: "rnf" }); // rnf = route not found
 });
 
-// connect to database and start server
 app.listen(process.env.PORT, () => {
   console.log("server listening on port " + process.env.PORT);
 });
