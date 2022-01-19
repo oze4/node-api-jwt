@@ -30,4 +30,8 @@ Authorization header value must start with `JWT` plus one space, and then the JW
 
 ## Demo
 
-![demo](https://github.com/oze4/node-api-jwt/blob/master/.github/node-jwt-poc.gif)
+
+https://user-images.githubusercontent.com/21092343/150077834-ac8d28a9-e1d1-40d0-9962-64426524112f.mp4
+
+
+
