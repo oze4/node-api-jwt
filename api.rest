@@ -3,9 +3,9 @@ POST http://localhost:3000/api/user/create HTTP/1.1
 content-type: application/json
 
 {
-  "username": "test1",
-  "password": "password1",
-  "email": "some@email.com"
+  "username": "testing",
+  "password": "password",
+  "email": "foo@baz.com"
 }
 
 ###
@@ -15,8 +15,8 @@ POST http://localhost:3000/api/user/login HTTP/1.1
 content-type: application/json
 
 {
-  "username": "test1",
-  "password": "password1"
+  "username": "testing",
+  "password": "password"
 }
 
 ###
@@ -24,4 +24,4 @@ content-type: application/json
 # Use JWT to access protected route
 GET http://localhost:3000/api/protected HTTP/1.1
 content-type: application/json
-authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZGI3OGViMmZkMTY4MjZhOTEyYzllNCIsImlhdCI6MTY0MTg0OTI5OSwiZXhwIjoxNjQxOTA5Mjk5fQ.slot69n2Y3II-uFbsIRZOtNtwO5grDe2-U5JHHJf63U
+authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTdhZmI1ODdiYTE1YjVlMzAxYzVkZSIsImlhdCI6MTY0MjU3Mzc1NSwiZXhwIjoxNjQyNjMzNzU1fQ.qzKYAG17Cfhv2hfHFJLLoRz02cv18bDef6CqgZHV50k
