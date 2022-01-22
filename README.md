@@ -15,8 +15,6 @@ Authorization header value must start with `JWT` plus one space, and then the JW
 }
 ``` 
 
-[See here for more](https://github.com/oze4/node-api-jwt/blob/master/.github/node-jwt-poc.gif)
-
 ## Setup
 
 - The easiest way to test this project is to install the [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) vscode extension. 
