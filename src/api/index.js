@@ -49,7 +49,7 @@ api.post("/user/login", async (req, res) => {
 
 api.get("/protected", [loginRequired, findUser], (req, res) => {
   if (!req.user) {
-    res.status(500).json({ status: "error", message: "access denied" });
+    res.status(401).json({ status: "error", message: "unauthorized" });
     return;
   }
   res.status(200).json({ status: "success", user: req.user });
