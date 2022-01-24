@@ -35,18 +35,15 @@ api.post("/user/login", async (req, res) => {
   try {
     const { username, password } = req.body;
     if (!username || !password) {
-      res.status(500).json({ status: "error", message: "missing required field" });
+      throw new Error("unauthorized");
     }
     const user = await User.findOne({ username });
-    if (!user) {
-      throw new Error("user not found");
-    }
-    if (!user.validPassword(password)) {
-      throw new Error("incorrect password");
+    if (!user || !user.validPassword(password)) {
+      throw new Error("unauthorized");
     }
     signJwtAndRespond(user, res);
   } catch (e) {
-    res.status(500).json({ status: "error", message: e.message });
+    res.status(401).json({ status: "error", message: e.message });
   }
 });
 
