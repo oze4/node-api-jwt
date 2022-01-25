@@ -15,7 +15,7 @@ const signJwtAndRespond = (user, res) => {
   const jwtOptions = { expiresIn: 60000 };
   const jwtSigned = jwt.sign(jwtRaw, process.env.JWT_SIGNATURE, jwtOptions);
   res.status(200).json({ status: "success", message: "ok", token: jwtSigned });
-}
+};
 
 api.post("/user/create", async (req, res) => {
   const { username, password, email } = req.body;

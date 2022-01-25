@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const helmet = require("helmet");
-const attachApiRouter = require("./api");
+const attachApiRouter = require("./routers/api");
 
 // make sure we have env vars set
 if (!process.env.PORT) {
@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 });
 
 // 404 catchall
-app.use('*', (_req, res, _next) => {
+app.use("*", (_req, res, _next) => {
   res.status(404).json({ status: "error", message: "rnf" }); // rnf = route not found
 });
 
